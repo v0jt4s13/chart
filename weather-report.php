@@ -1,7 +1,7 @@
 <?php
 $weather_sql = "SELECT id, visibility, cloudiness, fall, wind_direction, wind_speed, temperature, 
 DATE_FORMAT(probe_date,'%H:%i') as time, DATE_FORMAT(probe_date,'%Y-%m-%d') as date, probe_date 
-FROM weather where DATE(probe_date) >= CURDATE()-3
+FROM weather where DATE(probe_date) >= CURDATE()-7
 and probe_date < NOW() order by probe_date asc";
 $today = date("Y-m-d");
 ?>
@@ -11,7 +11,11 @@ $today = date("Y-m-d");
 <canvas id="myChart" width="800" height="250"></canvas>
 </td></tr></table>
 <?php
+ ini_set( 'display_errors', 'On' ); 
+ error_reporting( E_ALL );
+ 
   include_once 'dbconnect.php';	
+  
   $conn = new mysqli(DBHOST,DBUSER,DBPASS,DBNAME);
    
   if ($result = $conn->query($weather_sql)) {
@@ -20,6 +24,15 @@ $today = date("Y-m-d");
 	$date_out ="";
 	$time = "";
 	$date_tmp = "";
+
+	$temp_val = "";
+	$bg_color = "";
+	$bor_color = "";
+	$temp2_val = "";
+	$temp3_val = "";
+	
+
+
     while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
 	  if ( $time != $row['time'] ) {	
 		  if ($label_val!="") {
