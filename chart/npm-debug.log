@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '/var/www/lotnisko/api/Chart.js-master/src/chart.js',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 verbose cache add [ '/var/www/lotnisko/api/Chart.js-master/src/chart.js', null ]
+5 verbose cache add name=undefined spec="/var/www/lotnisko/api/Chart.js-master/src/chart.js" args=["/var/www/lotnisko/api/Chart.js-master/src/chart.js",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: '/var/www/lotnisko/api/Chart.js-master/src/chart.js',
+6 verbose parsed url   path: '/var/www/lotnisko/api/Chart.js-master/src/chart.js',
+6 verbose parsed url   href: '/var/www/lotnisko/api/Chart.js-master/src/chart.js' }
+7 silly lockFile 2f7c2c8d-api-Chart-js-master-src-chart-js /var/www/lotnisko/api/Chart.js-master/src/chart.js
+8 verbose lock /var/www/lotnisko/api/Chart.js-master/src/chart.js /home/vs/.npm/2f7c2c8d-api-Chart-js-master-src-chart-js.lock
+9 verbose chmod /tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz 644
+10 verbose tar unpack /tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz
+11 silly lockFile 86da627b--6388455347623676-tmp-tgz-unpack tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack
+12 verbose lock tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack /home/vs/.npm/86da627b--6388455347623676-tmp-tgz-unpack.lock
+13 silly lockFile a160fd37-70874-0-6388455347623676-tmp-tgz tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz
+14 verbose lock tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz /home/vs/.npm/a160fd37-70874-0-6388455347623676-tmp-tgz.lock
+15 silly gunzTarPerm modes [ '755', '644' ]
+16 error not a package /tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz
+17 silly lockFile 86da627b--6388455347623676-tmp-tgz-unpack tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack
+18 silly lockFile 86da627b--6388455347623676-tmp-tgz-unpack tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack
+19 silly lockFile a160fd37-70874-0-6388455347623676-tmp-tgz tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz
+20 silly lockFile a160fd37-70874-0-6388455347623676-tmp-tgz tar:///tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz
+21 silly lockFile 2f7c2c8d-api-Chart-js-master-src-chart-js /var/www/lotnisko/api/Chart.js-master/src/chart.js
+22 silly lockFile 2f7c2c8d-api-Chart-js-master-src-chart-js /var/www/lotnisko/api/Chart.js-master/src/chart.js
+23 error addLocal Could not install /var/www/lotnisko/api/Chart.js-master/src/chart.js
+24 error Error: ENOENT, open '/tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack/package.json'
+25 error If you need help, you may report this *entire* log,
+25 error including the npm and node versions, at:
+25 error     <http://github.com/npm/npm/issues>
+26 error System Linux 3.16.0-4-amd64
+27 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "/var/www/lotnisko/api/Chart.js-master/src/chart.js" "--save"
+28 error cwd /var/www/lotnisko/api/chart
+29 error node -v v0.10.29
+30 error npm -v 1.4.21
+31 error path /tmp/npm-21679-Cz09-iqX/1475433370874-0.6388455347623676/tmp.tgz-unpack/package.json
+32 error code ENOENT
+33 error errno 34
+34 verbose exit [ 34, true ]
